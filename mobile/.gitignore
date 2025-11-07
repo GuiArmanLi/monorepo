@@ -1,0 +1,29 @@
+# Arquivo .gitignore na RAIZ (C:\Users\Gui\dev\monorepo\mobile\.gitignore)
+
+### Diretórios de Build e Cache do Gradle ###
+# Ignora caches do Gradle no nível do projeto
+.gradle/
+
+# Ignora todos os diretórios 'build' gerados pelo Gradle em qualquer módulo (* /build)
+# Esta regra é crucial em projetos multi-módulo (monorepo).
+*/build/
+
+### Configurações do Android Studio / IDE ###
+# Ignora configurações específicas da sua máquina/IDE
+.idea/
+*.iml
+local.properties
+captures/
+.externalNativeBuild/
+
+### Artefatos de Saída ###
+# Arquivos de release, Debug e keystores
+*.apk
+*.aab
+*.aar
+*.jks
+*.keystore
+
+### Logs e Arquivos Temporários ###
+*.log
+*.hprof
